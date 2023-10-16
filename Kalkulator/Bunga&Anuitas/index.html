@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator Bunga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <button id="theme-button" class="button dark-mode">Toggle Theme</button>
+    <br>
+    <div class="container">
+        <h1>Kalkulator Bunga</h1>
+        <div class="input-section">
+            <label for="modalAwal">Modal Awal:</label>
+            <input type="text" id="modalAwal" placeholder="Modal Awal" onkeyup="formatModalAwal(this)">
+        </div>
+        <div class="input-section">
+            <label for="bunga">Bunga (%):</label>
+            <input type="number" id="bunga" placeholder="Bunga">
+        </div>
+        <div class="input-section">
+            <label for="periode">Periode (Tahun):</label>
+            <input type="number" id="periode" placeholder="Periode">
+        </div>
+        <div class="input-section">
+            <label for="jenisBunga">Jenis Bunga:</label>
+            <select id="jenisBunga" onchange="ubahLabel(this)">
+                <option value="bungaTunggal">Bunga Tunggal</option>
+                <option value="bungaMajemuk">Bunga Majemuk</option>
+                <option value="anuitas">Anuitas</option>
+            </select>
+        </div>
+        <button onclick="hitungBunga()">Hitung</button>
+        <div id="hasilBunga" class="hasil"></div>
+        <div id="hasilModalAkhir" class="hasil"></div>
+    </div>
+    <center>
+        <div id="tabelAnuitas" class="hasil" style="display: none;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Bulan ke</th>
+                        <th>Angsuran Pokok</th>
+                        <th>Bunga</th>
+                        <th>Anuitas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Isi tabel akan diisi secara dinamis oleh JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </center>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+/* CSS Untuk Layar Kecil (Contoh: Smartphone) */
+@media (max-width: 768px) {
+    /* Atur gaya CSS khusus untuk layar kecil di sini */
+}
+
+/* CSS Untuk Layar Sedang (Contoh: Tablet) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Atur gaya CSS khusus untuk layar sedang di sini */
+}
+
+/* CSS Untuk Layar Besar (Contoh: Desktop) */
+@media (min-width: 1025px) {
+    /* Atur gaya CSS khusus untuk layar besar di sini */
+}
+
+/* Style untuk tabel */
+table {
+    border-collapse: separate; /* Menggunakan pemisah antara sel-sel tabel */
+    border-spacing: 0;
+    width: 100%;
+    margin: 20px 0;
+    background-color: #f7f7f7; /* Warna latar belakang tabel */
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Mengubah sudut-sudut tabel menjadi lebih bulat */
+    overflow: hidden; /* Mengatasi border-collapse yang terlihat kasar */
+    transition: box-shadow 0.3s ease-in-out; /* Animasi efek bayangan */
+}
+
+/* Animasi saat tabel diklik */
+table:active {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center; /* Teks di tengah sel tabel */
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #eaeaea; /* Warna latar belakang saat hover */
+    transition: background-color 0.2s ease-in-out; /* Animasi perubahan latar belakang */
+}
+
+/* Style untuk tombol show-details */
+.show-details {
+    cursor: pointer;
+    color: #000000;
+}
+
+/* Style untuk teks details */
+.details p {
+    margin: 5px 0;
+    font-weight: bold;
+    font-size: 16px; /* Menyesuaikan ukuran teks */
+}
+
+/* Style untuk judul kategori details */
+.details[data-content="form-tugas"] {
+    background-color: #ffd700;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #000; /* Mengubah warna teks menjadi hitam */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+.details[data-content="kalkulator"] {
+    background-color: #87ceeb;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #000; /* Mengubah warna teks menjadi hitam */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+
+
+/* Tambahkan baris ini untuk menyembunyikan semua baris details */
+.details {
+    display: none;
+}
+
+/* Efek bayangan saat tabel diklik */
+table:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Animasi saat tombol show-details diklik */
+.show-details:hover {
+    color: #0056b3;
+    transition: color 0.2s ease-in-out;
+}

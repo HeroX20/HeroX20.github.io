@@ -1,0 +1,234 @@
+body {
+    transition: background-color 0.3s ease;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode h1,
+.dark-mode h2 {
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #2f4858;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="radio"],
+form input[type="date"],
+form textarea,
+form select {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="radio"] + label {
+    margin-right: 20px;
+}
+
+button {
+    background-color: #2f4858;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1c2e3d;
+}
+
+section {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+h2 {
+    color: #2f4858;
+}
+
+#daftarTugas {
+    list-style: none;
+    padding: 0;
+}
+
+#daftarTugas li {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    color: #1c2e3d;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode #daftarTugas li {
+    background-color: rgb(106 104 104);
+    color: #ffffff;
+}
+
+#daftarTugas li:hover {
+    background-color: #e0e0e0;
+}
+
+.dark-mode #daftarTugas li:hover {
+    background-color: #9e9e9e;
+}
+
+.salin-btn {
+    background-color: #2f4858;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.salin-btn:hover {
+    background-color: #1c2e3d;
+}
+
+.hapus-btn {
+    background-color: #d9534f;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.hapus-btn:hover {
+    background-color: #c9302c;
+}
+
+#hapusSemuaBtn {
+    background-color: #d9534f; /* Warna merah */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#hapusSemuaBtn:hover {
+    background-color: #c9302c; /* Warna merah yang berbeda saat tombol dihover */
+}
+
+/* Tambahkan warna hijau untuk tombol "Kirim" */
+.kirim-btn {
+    background-color: #4CAF50; /* Warna hijau */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.kirim-btn:hover {
+    background-color: #45a049; /* Warna hijau yang berbeda saat tombol dihover */
+}
+
+/* Gaya untuk elemen pembungkus (div) */
+#tombolContainer {
+    display: flex; /* Gunakan Flexbox */
+    align-items: center; /* Pusatkan tombol secara vertikal */
+    justify-content: space-between; /* Posisikan tombol di sisi kanan dan kiri */
+}
+
+/* Gaya untuk tombol "Hapus Semua Tugas" dan "Simpan" */
+#hapusSemuaBtn{
+    background-color: #d9534f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px; /* Tambahkan margin kanan */
+}
+
+#hapusSemuaBtn:hover{
+    background-color: #c9302c;
+}
+
+#simpanBtn {
+    background-color: #2f4858;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;  
+    margin-right: 10px; /* Tambahkan margin kanan */
+}
+
+#simpanBtn:hover {
+    background-color: #1c2e3d;
+}
+
+/* Gaya untuk tombol "Kirim Semua Tugas" */
+#kirimSemuaBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#kirimSemuaBtn:hover {
+    background-color: #45a049;
+}
+
+/* Gaya untuk spasi antara tombol */
+#spacer {
+    flex: 1; /* Spasi akan mengisi sebanyak yang tersedia */
+}
+

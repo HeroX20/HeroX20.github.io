@@ -1,0 +1,191 @@
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.container.dark-mode {
+    background-color: #707070;
+    border: 1px solid #b3afaf;
+}
+
+.button.dark-mode {
+    background-color: #555;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    width: auto;
+}
+
+.button.dark-mode:hover {
+    background-color: #777;
+}
+
+/* Light Mode Styles */
+body.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+.container.light-mode {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+.button.light-mode {
+    background-color: #007bff;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    width: auto;
+}
+
+.button.light-mode:hover {
+    background-color: #0056b3;
+}
+
+/* Dark Mode Styles untuk Tabel */
+.dark-mode #tabelAnuitas {
+    border-color: #555;
+}
+
+.dark-mode #tabelAnuitas th,
+.dark-mode #tabelAnuitas td {
+    border-color: #777;
+    background-color: #444;
+    color: #fff;
+}
+
+.dark-mode #tabelAnuitas tr:nth-child(even) {
+    background-color: #555;
+}
+
+.dark-mode #tabelAnuitas tr:hover {
+    background-color: #666;
+}
+
+/* Light Mode Styles untuk Tabel
+.light-mode #tabelAnuitas {
+    /* Ganti dengan gaya sesuai dengan mode light 
+} */
+
+/* Tambahan untuk Tabel Anuitas dalam Dark Mode */
+#tabelAnuitas.dark-mode {
+    border-color: #555;
+}
+
+#tabelAnuitas.dark-mode th,
+#tabelAnuitas.dark-mode td {
+    border-color: #777;
+    background-color: #444;
+    color: #fff;
+}
+
+#tabelAnuitas.dark-mode tr:nth-child(even) {
+    background-color: #555;
+}
+
+#tabelAnuitas.dark-mode tr:hover {
+    background-color: #666;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #707070;;
+    border: 1px solid #b3afaf;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-section {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hasil {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#tabelAnuitas {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#tabelAnuitas th,
+#tabelAnuitas td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#tabelAnuitas th {
+    background-color: #f2f2f2;
+}
+
+#tabelAnuitas tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#tabelAnuitas tr:hover {
+    background-color: #ddd;
+}
+
+/* Mengatur transisi untuk elemen yang berubah tema */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.button {
+    transition: background-color 0.3s ease;
+}
+
+/* Mengatur transisi untuk tabel */
+#tabelAnuitas {
+    transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}

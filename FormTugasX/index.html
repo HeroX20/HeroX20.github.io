@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Tugas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        #daftarTugas li {
+            white-space: pre-line;
+        }
+    </style>
+</head>
+<body>
+    <button id="mode">change!</button>
+    <header>
+        <h1>Form Tugas</h1>
+    </header>
+    <main>
+        <form id="formTugas">
+            <div class="form-group">
+                <label for="mataPelajaran">Mata Pelajaran:</label>
+                <select name="mapel" id="mataPelajaran">
+                    <option>Pendidikan Agama Islam</option>
+                    <option>Kejuruan</option>
+                    <option>Bahasa Inggris</option>
+                    <option>Bahasa Indonesia</option>
+                    <option>Pendidikan Jasmani, Olahraga, dan Keterampilan</option>
+                    <option>Matematika</option>
+                    <option>Pendidikan Kewarganegaraan</option>
+                    <option>Sejarah</option>
+                    <option>Produk Kreatif dan Kewirausahaan</option>
+                    <option>Informatika</option>
+                    <option>Lainnya</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="infoTugas">Info/Tugas:</label>
+                <label for="info">Info:</label>
+                <input type="radio" id="info" name="infoTugas" value="info" required>
+                <label for="tugas">Tugas:</label>
+                <input type="radio" id="tugas" name="infoTugas" value="tugas" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tenggat">Tenggat:</label>
+                <input type="date" id="tenggat" required>
+            </div>
+
+            <div class="form-group">
+                <label for="keterangan">Keterangan:</label>
+                <textarea id="keterangan" rows="4" cols="50"></textarea>
+            </div>
+
+            <div id="tombolContainer">
+                <button id="simpanBtn" type="submit">Simpan</button>
+                <button id="hapusSemuaBtn">Hapus Semua Tugas</button>
+                <div id="spacer"></div> <!-- Membuat spasi antara tombol -->
+                <button id="kirimSemuaBtn" style="display: none;">Kirim Semua Tugas</button>
+            </div>         
+        </form> 
+        <section>
+            <h2>Daftar Tugas</h2>
+            <ul id="daftarTugas"></ul>
+        </section>
+    </main>
+    <script src="Main.js"></script>
+</body>
+</html>
