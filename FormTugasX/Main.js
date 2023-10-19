@@ -3,6 +3,7 @@ const body = document.body;
 const header = document.querySelector('header');
 const daftarTugas = document.getElementById('daftarTugas');
 const hapusSemuaButton = document.getElementById('hapusSemuaBtn');
+const webhookURL = 'https://discord.com/api/webhooks/1164421985242189865/9qtLkaawvXAWgSDW-5E83iC84FRDmCPzClvcOciyT07vp33HiTMhatByd1c0QGctDkzL';
 
 toggleBtn.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
@@ -230,7 +231,6 @@ function easteregg(tenggat, keterangan) {
 
 
 function kirimDataKeWebhook(mataPelajaran, infoTugas, tenggat, keterangan) {
-    const webhookURL = 'https://discord.com/api/webhooks/1162612396892897320/1dgSVw2LRvrgcANwMtJiWqpzZadwyH7G2NeaJItBO-qNbR4mA9TzofA59EzV5qX3pvG_';
 
     const dataTugas = {
         content: `\`\`\`
