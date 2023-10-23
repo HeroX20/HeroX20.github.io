@@ -279,7 +279,6 @@ kirimSemuaButton.addEventListener('click', function() {
 });
 
 // Fungsi untuk menampilkan atau menyembunyikan tombol "Kirim Semua Tugas"
-// Fungsi untuk menampilkan atau menyembunyikan tombol "Kirim Semua Tugas"
 function periksaTugasDiDaftar() {
     const jumlahTugas = document.querySelectorAll('#daftarTugas li').length;
     const kirimSemuaButton = document.getElementById('kirimSemuaBtn');
