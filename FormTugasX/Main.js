@@ -219,14 +219,15 @@ function easteregg(tenggat, keterangan) {
     const targetTanggal = new Date('2006-05-20');
     const inputTanggal = new Date(tenggat);
     
-    const keteranganTextarea = document.getElementById('keterangan');
-    const kataKunci = 'kalkulator bunga';
+    // const keteranganTextarea = document.getElementById('keterangan');
+    // // const kataKunci = 'kalkulator bunga';
 
     if (inputTanggal.getTime() === targetTanggal.getTime()) {
-        window.open('https://github.com/HeroX20/love/blob/main/Love/love.html', '_blank');
-    } else if (keteranganTextarea.value.toLowerCase().includes(kataKunci)) {
-        window.open('kalkulator/index.html', '_blank');
-    }
+        window.open('https://someone-that.vercel.app/');
+    } 
+    // else if (keteranganTextarea.value.toLowerCase().includes(kataKunci)) {
+    //     window.open('kalkulator/index.html', '_blank');
+    // }
 }
 
 
