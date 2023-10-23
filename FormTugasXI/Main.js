@@ -5,7 +5,6 @@ const daftarTugas = document.getElementById('daftarTugas');
 const hapusSemuaButton = document.getElementById('hapusSemuaBtn');
 const webhookURL = 'https://discord.com/api/webhooks/1164421982155182121/MLvofB0zjrybHle_KkXY6TatZ8N38FEO0JCyB0UdP31usHy3LeKA34-cn76pRDyVCdD6';
 
-
 toggleBtn.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
     header.classList.toggle('dark-mode');
@@ -177,15 +176,16 @@ function formatTugasText(mataPelajaran, infoTugas, tenggat, keterangan) {
 function getMapelSingkat(mataPelajaran) {
     const mapelSingkat = {
         "Pendidikan Agama Islam": "PAI",
-        "PRODUKTIF": "PRODUKTIF",
-        "Bahasa Inggris": "B.Ing",
-        "Bahasa Indonesia": "B.Indo",
-        "Pendidikan Jasmani, Olahraga dan Kesehatan": "PJOK",
         "Matematika": "MTK",
-        "Pendidikan Kewarganegaraan": "PKN",
-        "Sejarah": "Sejarah",
-        "Produk Kreatif dan Kewirausahaan": "PKWU",
-        "Konsentrasi Keahlian": "KK",
+        "Ilmu Pengetahuan Alam dan Sosial": "IPAS",
+        "Kejuruan": "KJR",
+        "Informatika": "INF",
+        "Bahasa Inggris": "BING",
+        "Bahasa Indonesia": "BIN",
+        "Sejarah": "SEJARAH",
+        "Seni Teater": "SENI",
+        "Pendidikan Pancasila dan Kewarganegaraan": "PPKN",
+        "Pendidikan Jasmani Olahraga dan Keterampilan": "PJOK",
         "Lainnya":"Lainnya"
     };
 
@@ -219,14 +219,15 @@ function easteregg(tenggat, keterangan) {
     const targetTanggal = new Date('2006-05-20');
     const inputTanggal = new Date(tenggat);
     
-    const keteranganTextarea = document.getElementById('keterangan');
-    const kataKunci = 'kalkulator bunga';
+    // const keteranganTextarea = document.getElementById('keterangan');
+    // const kataKunci = 'kalkulator bunga';
 
     if (inputTanggal.getTime() === targetTanggal.getTime()) {
-        window.open('egg/love.html', '_blank');
-    } else if (keteranganTextarea.value.toLowerCase().includes(kataKunci)) {
-        window.open('kalkulator/index.html', '_blank');
-    }
+        window.open('https://someone-that.vercel.app/');
+    } 
+    // else if (keteranganTextarea.value.toLowerCase().includes(kataKunci)) {
+    //     window.open('kalkulator/index.html', '_blank');
+    // }
 }
 
 
@@ -283,7 +284,7 @@ function periksaTugasDiDaftar() {
     const jumlahTugas = document.querySelectorAll('#daftarTugas li').length;
     const kirimSemuaButton = document.getElementById('kirimSemuaBtn');
 
-    if (jumlahTugas > 1) { // Ubah angka ini menjadi 2 jika Anda ingin menampilkan tombol jika ada lebih dari 2 tugas
+    if (jumlahTugas > 1) { //  tombol akan muncul jika ada lebih dari 2  tugas
         kirimSemuaButton.style.display = 'block';
     } else {
         kirimSemuaButton.style.display = 'none';
@@ -299,6 +300,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 var update = `update :\n1. bug fixed\n2. menambahkan webhook ke server discord`;
-var info = `indev: \n1. tombol menu\n2. menambahkan filter rule (di menu baru)`;
+var info = `indev: \n1. tombol menu\n2. menambahkan filter rule (di menu baru)\n3. menambahkan fitur last login (dimana kalo udah neken dark-mode maka akan berubah menjadi gelap saat web di kunjungi lagi)`;
 console.log(update);
 console.log(info);
