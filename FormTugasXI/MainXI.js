@@ -176,16 +176,15 @@ function formatTugasText(mataPelajaran, infoTugas, tenggat, keterangan) {
 function getMapelSingkat(mataPelajaran) {
     const mapelSingkat = {
         "Pendidikan Agama Islam": "PAI",
+        "PRODUKTIF": "PRODUKTIF",
+        "Bahasa Inggris": "B.Ing",
+        "Bahasa Indonesia": "B.Indo",
+        "Pendidikan Jasmani, Olahraga dan Kesehatan": "PJOK",
         "Matematika": "MTK",
-        "Ilmu Pengetahuan Alam dan Sosial": "IPAS",
-        "Kejuruan": "KJR",
-        "Informatika": "INF",
-        "Bahasa Inggris": "BING",
-        "Bahasa Indonesia": "BIN",
-        "Sejarah": "SEJARAH",
-        "Seni Teater": "SENI",
-        "Pendidikan Pancasila dan Kewarganegaraan": "PPKN",
-        "Pendidikan Jasmani Olahraga dan Keterampilan": "PJOK",
+        "Pendidikan Kewarganegaraan": "PKN",
+        "Sejarah": "Sejarah",
+        "Produk Kreatif dan Kewirausahaan": "PKWU",
+        "Konsentrasi Keahlian": "KK",
         "Lainnya":"Lainnya"
     };
 
@@ -279,12 +278,11 @@ kirimSemuaButton.addEventListener('click', function() {
 });
 
 // Fungsi untuk menampilkan atau menyembunyikan tombol "Kirim Semua Tugas"
-// Fungsi untuk menampilkan atau menyembunyikan tombol "Kirim Semua Tugas"
 function periksaTugasDiDaftar() {
     const jumlahTugas = document.querySelectorAll('#daftarTugas li').length;
     const kirimSemuaButton = document.getElementById('kirimSemuaBtn');
 
-    if (jumlahTugas > 1) { //  tombol akan muncul jika ada lebih dari 2  tugas
+    if (jumlahTugas > 1) { // Ubah angka ini menjadi 2 jika Anda ingin menampilkan tombol jika ada lebih dari 2 tugas
         kirimSemuaButton.style.display = 'block';
     } else {
         kirimSemuaButton.style.display = 'none';
