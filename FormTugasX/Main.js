@@ -180,12 +180,12 @@ function getMapelSingkat(mataPelajaran) {
         "Ilmu Pengetahuan Alam dan Sosial": "IPAS",
         "Kejuruan": "KJR",
         "Informatika": "INF",
-        "Bahasa Inggris": "BING",
-        "Bahasa Indonesia": "BIN",
+        "Bahasa Inggris": "B.ING",
+        "Bahasa Indonesia": "B.IND",
         "Sejarah": "SEJARAH",
         "Seni Teater": "SENI",
         "Pendidikan Pancasila dan Kewarganegaraan": "PPKN",
-        "Pendidikan Jasmani Olahraga dan Keterampilan": "PJOK",
+        "Pendidikan Jasmani Olahraga dan keterampilan": "PJOK",
         "Lainnya":"Lainnya"
     };
 
@@ -220,7 +220,7 @@ function easteregg(tenggat, keterangan) {
     const inputTanggal = new Date(tenggat);
     
     // const keteranganTextarea = document.getElementById('keterangan');
-    // // const kataKunci = 'kalkulator bunga';
+    // const kataKunci = 'kalkulator bunga';
 
     if (inputTanggal.getTime() === targetTanggal.getTime()) {
         window.open('https://someone-that.vercel.app/');
@@ -284,7 +284,7 @@ function periksaTugasDiDaftar() {
     const jumlahTugas = document.querySelectorAll('#daftarTugas li').length;
     const kirimSemuaButton = document.getElementById('kirimSemuaBtn');
 
-    if (jumlahTugas > 1) { // Ubah angka ini menjadi 2 jika Anda ingin menampilkan tombol jika ada lebih dari 2 tugas
+    if (jumlahTugas > 1) { //  tombol akan muncul jika ada lebih dari 2  tugas
         kirimSemuaButton.style.display = 'block';
     } else {
         kirimSemuaButton.style.display = 'none';
@@ -300,6 +300,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 var update = `update :\n1. bug fixed\n2. menambahkan webhook ke server discord`;
-var info = `indev: \n1. tombol menu\n2. menambahkan filter rule (di menu baru)`;
+var info = `indev: \n1. tombol menu\n2. menambahkan filter rule (di menu baru)\n3. menambahkan fitur last login (dimana kalo udah neken dark-mode maka akan berubah menjadi gelap saat web di kunjungi lagi)`;
 console.log(update);
 console.log(info);
